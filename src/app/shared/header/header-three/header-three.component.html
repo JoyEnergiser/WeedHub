@@ -1,0 +1,51 @@
+<!-- header start -->
+<header class="sticky header-2  header-type" id="sticky">
+    <div class="mobile-fix-option"></div>
+    <div class="top-header">
+        <div class="container">
+             <app-topbar></app-topbar>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main-menu border-section border-top-0">
+                    <div class="menu-left">
+                        <div class="navbar">
+                            <a (click)="openNav()">
+                                <i class="fa fa-bars sidebar-bar" aria-hidden="true"></i>
+                            </a>
+                            <div id="mySidenav" class="sidenav">
+                            <a [routerLink]="" class="sidebar-overlay" (click)="closeNav()"></a>
+                            <nav>
+                              <div (click)="closeNav()">
+                                <div class="sidebar-back text-left">
+                                  <i class="fa fa-angle-left pr-2" aria-hidden="true"></i> Back
+                                </div>
+                              </div>
+                            <app-left-menu></app-left-menu>
+                            </nav>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="brand-logo layout2-logo headerlogo">
+                        <a [routerLink]="['/home/one']"><img src="assets/images/icon/logo.png" class="img-fluid" alt=""></a>
+                    </div>
+                    <div class="menu-right pull-right">
+                        <app-header-widgets [shoppingCartItems]="shoppingCartItems"></app-header-widgets>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="main-nav-center">
+                    <app-navbar></app-navbar>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->

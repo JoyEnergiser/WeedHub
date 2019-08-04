@@ -1,0 +1,13 @@
+<!-- section start -->
+<section class="portfolio-section metro-section port-col">
+    <div class="container">
+        <div class="isotopeContainer row">
+            <div class="col-xl-3 col-sm-6 isotopeSelector" *ngFor="let product of products">
+                <div class="product-box">
+                    <app-product-box-metro [product]="product"></app-product-box-metro>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section ends -->

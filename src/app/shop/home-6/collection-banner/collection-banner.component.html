@@ -1,0 +1,23 @@
+<!-- collection banner -->
+<section class="banner-padding banner-furniture">
+    <div class="container-fluid">
+        <div class="row partition3">
+            <div class="col-md-4" *ngFor="let ct of category">
+                <a [routerLink]="ct.link">
+                    <div class="collection-banner p-right text-right">
+                        <img [src]="ct.image" alt="" class="img-fluid">
+                        <div class="contain-banner banner-3">
+                            <div>
+                                <h4>{{ct.save}}</h4>
+                                <h2>{{ct.title}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- collection banner end -->
+
+

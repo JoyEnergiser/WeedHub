@@ -1,0 +1,40 @@
+<!-- Home slider -->
+<section class="p-0 small-slider">
+    <ngx-slick-carousel class="slide-1 home-slider" #slickModal="slick-carousel" [config]="sliderConfig">
+        <div ngxSlickItem>
+            <div class="home home45 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="slider-contain">
+                                <div>
+                                    <h4>every pet is different</h4>
+                                    <h1>let's shop</h1>
+                                    <a [routerLink]="'/home/left-sidebar/collection/pets'" class="btn btn-solid">shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ngxSlickItem>
+            <div class="home home46 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="slider-contain">
+                                <div>
+                                    <h4>Any thing that pets want</h4>
+                                    <h1>save 20%</h1>
+                                    <a [routerLink]="'/home/left-sidebar/collection/pets'" class="btn btn-solid">shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</section>
+<!-- Home slider end -->

@@ -1,0 +1,82 @@
+<!-- parallax product section start -->
+<section class="full-banner parallax-banner23 parallax tools-parallax-product tab-left  tools-grey border-box">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="theme-tab">
+                    <div class="left-side">
+                        <div class="left-tab-title">
+                            <h4>our shop</h4>
+                            <h3>Buy Marijuana</h3>
+                        </div>
+                        <ul  class="tabs tab-title">
+                            <li class="current">
+                                <a href="tab-1">Cannabis Oils</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-2">pre rolls</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-3">marijuana edibles</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-4">marijuana weeds</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-5">CBD oils</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-6">marijuana seeds</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content-cls">
+                        <div id="tab-1" class="tab-content active default">
+                          <div class="no-slider row">
+                              <div class="product-box product-wrap" *ngFor="let product of products | slice:0:4">
+                                 <app-product-box-hover [product]="product"></app-product-box-hover>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                          <div class="no-slider row">
+                            <div class="product-box product-wrap" *ngFor="let product of products | slice:4:8">
+                                 <app-product-box-hover [product]="product"></app-product-box-hover>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-content" >
+                          <div class="no-slider row">
+                            <div class="product-box product-wrap" *ngFor="let product of products | slice:0:4">
+                                 <app-product-box-hover [product]="product"></app-product-box-hover>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-content " >
+                          <div class="no-slider row">
+                            <div class="product-box product-wrap" *ngFor="let product of products | slice:4:8">
+                                 <app-product-box-hover [product]="product"></app-product-box-hover>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-content" >
+                          <div class="no-slider row">
+                            <div class="product-box product-wrap" *ngFor="let product of products | slice:0:4">
+                                 <app-product-box-hover [product]="product"></app-product-box-hover>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="tab-6" class="tab-content" >
+                          <div class="no-slider row">
+                            <div class="product-box product-wrap" *ngFor="let product of products | slice:4:8">
+                                 <app-product-box-hover [product]="product"></app-product-box-hover>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- parallax product section end -->

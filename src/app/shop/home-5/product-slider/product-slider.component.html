@@ -1,0 +1,21 @@
+<!-- product section -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title4">
+                    <h2 class="title-inner4">trending products</h2>
+                    <div class="line">
+                        <span></span>
+                    </div>
+                </div>
+                <ngx-slick-carousel class="product-4 product-m no-arrow" #slickModal="slick-carousel" [config]="productSlideConfig">
+                    <div ngxSlickItem class="product-box product-wrap" *ngFor="let product of products">
+                        <app-product-box [product]="product"></app-product-box> 
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product section end -->

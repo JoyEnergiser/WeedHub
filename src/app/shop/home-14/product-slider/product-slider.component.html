@@ -1,0 +1,20 @@
+<!-- Product slider -->
+<div class="title3 section-t-space">
+    <h4>special offer</h4>
+    <h2 class="title-inner3">new products</h2>
+    <div class="line"></div>
+</div>
+<section class="p-t-0 section-b-space tools-grey border-box">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ngx-slick-carousel class="product-5 product-m no-arrow" #slickModal="slick-carousel" [config]="productSlideConfig">
+                  <div ngxSlickItem class="product-box product-wrap" *ngFor="let product of products | slice:0:16">
+                     <app-product-box-hover [product]="product"></app-product-box-hover>
+                  </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product slider end -->

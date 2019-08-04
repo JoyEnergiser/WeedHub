@@ -1,0 +1,22 @@
+<!-- Paragraph-->
+<div class="title1 title-gradient  section-t-space">
+    <h4>special offer</h4>
+    <h2 class="title-inner1">top collection</h2>
+</div>
+
+<!-- Paragraph end -->
+
+
+<!-- Product slider -->
+<section class="p-t-0 section-b-space gym-product">
+    <div class="container">
+        <div class="row partition-cls">
+            <div class="col-xl-3 col-sm-6" *ngFor="let product of products | slice:0:8">
+                <div class="product-box ">
+                     <app-product [product]="product"></app-product>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product slider end -->

@@ -1,0 +1,19 @@
+<!-- Product slider -->
+<div class="title1 ">
+    <h4>special offer</h4>
+    <h2 class="title-inner1">new products</h2>
+</div>
+<section class="p-t-0">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ngx-slick-carousel class="product-5 product-m no-arrow" #slickModal="slick-carousel" [config]="productSlideConfig">
+                    <div ngxSlickItem class="product-box" *ngFor="let product of products">
+                        <app-product [product]="product"></app-product> 
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product slider end -->

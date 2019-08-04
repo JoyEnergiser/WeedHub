@@ -1,0 +1,53 @@
+<!-- parallax section start -->
+<section class="full-banner parallax-banner21 parallax small-slider tools-parallax-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <div class="tools-description">
+                    <div>
+                        <h3>select your vehical</h3>
+                        <div class="tools-form">
+                            <div class="search-box">
+                                <select  class="form-control">
+                                    <option value="">Select Make</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Fiat</option>
+                                    <option value="4">Hyndai</option>
+                                    <option value="5">Skoda</option>
+                                </select>
+                            </div>
+                            <div class="search-box">
+                                <select name="model"  class="form-control">
+                                    <option value="">Select Model</option>
+                                </select>
+                            </div>
+                            <div class="search-box">
+                                <select name="engine"  class="form-control">
+                                    <option value="">Select category</option>
+                                </select>
+                            </div>
+                            <div class="search-box">
+                                <select name="year" class="form-control">
+                                    <option value="">Select Year</option>
+                                </select>
+                            </div>
+                            <div class="search-button">
+                                <a href="#" class="btn btn-solid btn-find">find my part</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 tools-grey">
+                <ngx-slick-carousel class="tools-product-4 product-m" #slickModal="slick-carousel" [config]="productSlideConfig">
+                  <div ngxSlickItem class="product-box product-wrap" *ngFor="let product of products | slice:0:16">
+                     <app-product-box-hover [product]="product"></app-product-box-hover>
+                  </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- parallax section end -->

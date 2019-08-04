@@ -1,0 +1,22 @@
+<!-- Product slider -->
+<section class="section-b-space j-box pets-box">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title1 title5">
+                    <h4>special offer</h4>
+                    <h2 class="title-inner1">top collection</h2>
+                    <hr role="tournament6">
+                </div>
+                
+                <ngx-slick-carousel class="product-4 product-m no-arrow" #slickModal="slick-carousel" [config]="productSlideConfig">
+                    <div ngxSlickItem class="product-box" *ngFor="let product of products | slice:0:16">
+                       <app-product [product]="product"></app-product>
+                    </div>
+                </ngx-slick-carousel>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product slider end -->

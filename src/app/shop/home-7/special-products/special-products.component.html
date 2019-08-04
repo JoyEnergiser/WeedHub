@@ -1,0 +1,49 @@
+<!-- product-box slider -->
+<section class="section-b-space">
+    <div class="full-box">
+        <div class="container">
+            <div class="title4">
+                <h2 class="title-inner4">best selling products</h2>
+                <div class="line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="theme-card center-align">
+                        <div class="offer-slider">
+                            <div class="sec-1">
+                                <div class="product-box2" *ngFor="let product of products | slice:0:2">
+                                    <app-product-box-vertical [product]="product"></app-product-box-vertical>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 center-slider">
+                    <div>
+                        <div class="offer-slider">
+                            <div>
+                                <div class="product-box product-wrap text-center" *ngFor="let product of products | slice:4:5">
+                                    <app-product-box [product]="product"></app-product-box>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="theme-card center-align">
+                        <div class="offer-slider">
+                            <div class="sec-1">
+                                <div class="product-box2" *ngFor="let product of products | slice:2:4">
+                                    <app-product-box-vertical [product]="product"></app-product-box-vertical>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product-box slider end -->

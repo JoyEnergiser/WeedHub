@@ -1,0 +1,60 @@
+<!--  tab section  -->
+<div class="bg-block">
+    <section class="p-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="title4">
+                        <h2 class="title-inner4">trending products</h2>
+                        <div class="line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="theme-tab">
+                        <ul class="tabs tab-title">
+                            <li class="current">
+                                <a href="tab-7">winter</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-8">greens</a>
+                            </li>
+                            <li class="">
+                                <a href="tab-9">various</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content-cls">
+                            <div id="tab-7" class="tab-content active default" >
+                                <div class="row product-tab">
+                                    <div class="tab-box" *ngFor="let product of products | slice:0:8">
+                                        <div class="product-box2">
+                                            <app-product-box-vertical [product]="product"></app-product-box-vertical>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-8" class="tab-content" >
+                                <div class="row product-tab">
+                                     <div class="tab-box" *ngFor="let product of products | slice:0:8 | orderBy:'desc'">
+                                        <div class="product-box2">
+                                            <app-product-box-vertical [product]="product"></app-product-box-vertical>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-9" class="tab-content" >
+                                <div class="row product-tab">
+                                   <div class="tab-box" *ngFor="let product of products | slice:0:8">
+                                        <div class="product-box2">
+                                            <app-product-box-vertical [product]="product"></app-product-box-vertical>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--  tab section end -->

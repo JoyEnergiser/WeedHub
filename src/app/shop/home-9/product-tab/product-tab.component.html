@@ -1,0 +1,40 @@
+<!-- slider tab  -->
+<section class="section-b-space">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="theme-tab">
+                    <ul class="tabs tab-title2">
+                        <li class="current"><a href="tab-1">new arrival</a></li>
+                        <li class=""><a href="tab-2">top sell</a></li>
+                        <li class=""><a href="tab-3">featured</a></li>
+                    </ul>
+                    <div class="tab-content-cls no-color-varient">
+                        <div id="tab-1" class="tab-content active default">
+                            <div class="row no-slider">
+                                <div class="product-box product-wrap" *ngFor="let product of products | slice:0:8">
+                                    <app-product [product]="product"></app-product>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <div class="no-slider row">
+                                <div class="product-box product-wrap" *ngFor="let product of products | slice:0:8">
+                                    <app-product [product]="product"></app-product>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-content">
+                            <div class="no-slider row">
+                                <div class="product-box product-wrap" *ngFor="let product of products | slice:0:8">
+                                    <app-product [product]="product"></app-product>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- slider tab end -->
